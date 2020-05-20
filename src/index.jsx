@@ -28,7 +28,7 @@ const ConnectedIntlProvider = connect(state => {
 const render = async (AppComponent) => {
   // clear localStorage change version
   const settings = JSON.parse(localStorage.getItem('tomo:settings'))
-  if ((settings && settings.version.replace(/"/gi, '') !== DEX_VERSION)
+  if ((settings && settings.version && settings.version.replace(/"/gi, '') !== DEX_VERSION)
   || (settings && !settings.version)) localStorage.clear()
 
   const {addresses, err} = await getAddresses()
