@@ -9,13 +9,9 @@ let ENGINE_HTTP_URL,
   REACT_APP_DEX_VERSION,
   DEX_TITLE,
   DEX_LOGO,
-<<<<<<< HEAD
-  DEX_FAVICON
-=======
   DEX_FAVICON,
   DEX_DOCS_URL,
   DEX_VERSION
->>>>>>> bc15245... add prefix version
 
 const env = window.env || process.env
 
